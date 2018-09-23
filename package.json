@@ -1,0 +1,33 @@
+{
+  "name": "pizza",
+  "version": "1.0.0",
+  "description": "Website for pizza restaurant",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Henry (BlueTech)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.4.1",
+    "email-templates": "^4.0.1",
+    "express": "^4.13.4",
+    "util": "^0.11.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugzy101/pizzaapp.git"
+  },
+  "keywords": [
+    "pizza",
+    "restaurant",
+    "app"
+  ],
+  "bugs": {
+    "url": "https://github.com/bugzy101/pizzaapp/issues"
+  },
+  "homepage": "https://github.com/bugzy101/pizzaapp#readme"
+}

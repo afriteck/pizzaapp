@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<title>Dundun Pizza</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/stuffed.png");
+    min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 9am to 10pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+ <span class="w3-text-black w3-hide-small" style="font-size:100px">Cheese Stuffed<br>CRUST PIZZA</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Cheese Stuffed<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">OUR MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Chicken');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Chicken Meal</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Shawarma');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Shawarma</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+<p><img src="/img/pepperoni.jpg" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+ <h1><b>PEPPERONI PIZZA</b><span class="w3-tag w3-red w3-round">Popular!</span><class="w3-center</h1>
+    
+      <h1><b>Small Pepperoni</b><span class="w3-right w3-tag w3-dark-grey w3-round">₦2,000</span></h1>
+ <h1><b>Medium Pepperoni</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦3,500</span></h1>
+ <h1><b>Large Pepperoni</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦4,800</span></h1>
+<h1><b>XLarge Pepperoni</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦6,400</span></h1>
+<h1><b>1 Slice Xlarge Pepperoni</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦800</span></h1>
+      <p class="w3-text-grey">Tomatoe Sauce, fresh mozzarella, fresh Pepperoni</p>
+      <hr>
+<p><img src="/img/cheesestuffed.jpg" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+ <h1><b>Cheese Stuffed Crust Pepperoni Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦6,500</span></h1>
+      <p class="w3-text-grey">Mozarella Stuffed Crust, Tomatoe Sauce, fresh mozzarella, fresh Pepperoni</p>
+      <hr>
+<p><img src="/img/bbq1.jpg" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+<h1><b>Barbecue Chicken Pizza</b><span class="w3-tag w3-red w3-round">Popular!</span><class="w3-center</h1>
+      <h1><b>Small BBQ Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦2,200</span></h1>
+ <h1><b>Medium BBQ Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦3,700</span></h1>
+ <h1><b>Large BBQ Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦4,900</span></h1>
+<h1><b>XLarge BBQ Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦6,800</span></h1>
+<h1><b>1 Slice Xlarge BBQ Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦850</span></h1>
+      <p class="w3-text-grey">Barbecue Sauce, fresh mozzarella cheese, Sliced Chicken breast, Green pepper, red pepper, Onions</p>
+      <hr>
+
+<h1><b>Cheese Stuffed Crust BBQ Chicken Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦6,900</span></h1>
+ <p class="w3-text-grey">Mozarella Stuffed Crust, Barbecue Sauce, fresh mozzarella cheese, Sliced Chicken breast, Green pepper, red pepper, Onions</p>
+      <hr>
+      <p><img src="/img/vegetarian.jpg" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+<h1><b>Vegetarian PIZZA</b><span class="w3-tag w3-red w3-round">NEW!</span><class="w3-center</h1>
+      <h1><b>Small Vegetarian Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦2,200</span></h1>
+<h1><b>Medium Vegetarian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦3,800</span></h1>
+ <h1><b>Large Vegetarian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦5,000</span></h1>
+<h1><b>XLarge Vegetarian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦6,900</span></h1>
+      <p class="w3-text-grey">Tomatoe sauce, mozzarella cheese, mushroom, Broccoli, green pepper, green olives</p>
+      <hr>
+<h1><b>Cheese Stuffed Crust Vegetarian Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦6,900</span></h1>
+<p class="w3-text-grey">Mozarella Stuffed Crust,Tomatoe sauce, mozzarella cheese, mushroom, Broccoli, green pepper, olives</p>
+      <hr>
+
+  <p><img src="/img/hawai.jpg" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+<h1><b>Hawaiian PIZZA</b><span class="w3-tag w3-red w3-round">Special!</span><class="w3-center</h1>
+      <h1><b>Small Hawaiian Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦2,200</span></h1>
+<h1><b>Medium Hawaiian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦3,800</span></h1>
+ <h1><b>Large Hawaiian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦5,000</span></h1>
+<h1><b>XLarge Hawaiian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦6,900</span></h1>
+      <p class="w3-text-grey">Tomatoe sauce, mozzarella cheese, ham, chicken, fresh diced pineapple</p>
+      <hr>
+  <p><img src="/img/stuffedhawa.png" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+<h1><b>Stuffed Crust Hawaiian Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦6,900</span></h1>
+<p class="w3-text-grey">Mozarella Stuffed Crust,Tomatoe sauce, mozzarella cheese, ham, chicken, fresh diced pineapple</p>
+      <hr>
+  <p><img src="/img/meatlovers-pizza.jpg" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+<h1><b>Meat Lovers PIZZA</b><span class="w3-tag w3-red w3-round">Hot!</span><class="w3-center</h1>
+      <h1><b>Small Meat Lovers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦2,400</span></h1>
+<h1><b>Medium Meat Lovers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦3,800</span></h1>
+ <h1><b>Large Meat Lovers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦5,000</span></h1>
+<h1><b>XLarge Meat Lovers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦7,000</span></h1>
+      <p class="w3-text-grey">Tomatoe sauce, mozzarella cheese, pepperoni, sausage, beef, chicken, green pepper</p>
+      <hr>
+  <p><img src="/img/meaty.jpg" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+<h1><b>Stuffed Crust Meat Lovers Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦7000</span></h1>
+      <p class="w3-text-grey">Mozarella Stuffed Crust,tomatoe sauce, mozzarella cheese, pepperoni, sausage, beef, ham, chicken</p>
+      <hr>
+  <p><img src="/img/cheesepizza.jpg" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+
+      <h1><b>Small Cheese Pizza</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">₦2000</span></h1>
+<h1><b>Medium Cheese</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦3,500</span></h1>
+ <h1><b>Large Cheese</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦4,800</span></h1>
+<h1><b>XLarge Cheese</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦6,400</span></h1>
+      <p class="w3-text-grey">Tomatoe sauce, mozzarella cheese</p>
+      <hr>
+  <p><img src="/img/stuffedcheese.jpg" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+<h1><b>Stuffed Crust Cheese Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦6,500</span></h1>
+<p class="w3-text-grey">Mozarella Stuffed Crust,Tomatoe sauce, mozzarella cheese</p>
+      <hr>
+    </div>
+
+    <div id="Chicken" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>1 Piece chicken Combo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦1,500</span></h1>
+      <p class="w3-text-grey">Fresh Juicy Chicken, French Fries, 50cl soda</p>
+      <hr>
+   
+      <h1><b>2 Piece Chicken Combo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦2,200</span></h1>
+      <p class="w3-text-grey">Fresh Juicy Chicken, French Fries, 50cl soda</p>
+      <hr>
+      
+      <h1><b>3 Piece Chicken Combo</b> <span class="w3-tag w3-grey w3-round">Popular</span><span class="w3-right w3-tag w3-dark-grey w3-round">₦3,200</span></h1>
+      <p class="w3-text-grey">Fresh Juicy Chicken, French Fries, 50cl soda</p>
+      <hr>
+
+      <h1><b>6 Piece Chicken Combo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦4,800</span></h1>
+      <p class="w3-text-grey">Fresh Juicy Chicken, 50cl soda</p>
+	<hr>
+
+<h1><b>Fries</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦700</span></h1>
+      <p class="w3-text-grey">French Fries</p>
+
+    </div>
+
+
+    <div id="Shawarma" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Beef Shawarma</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">₦2,800</span></h1>
+      <p class="w3-text-grey">Beef, lettuce, tomatoe, cabbage, Creamy garlic sauce</p>
+      <hr>
+   
+      <h1><b>Chicken Shawarma</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦2,850</span></h1>
+      <p class="w3-text-grey">Chicken, lettuce, tomatoe, cabbage, Creamy garlic sauce</p>
+      <hr>
+       <p><img src="/img/sha.jpg" style="width:150px" class="w3-circle w3-center" alt="Pizza"></p>
+      <h1><b>Shawarma Platter</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₦3,800</span></h1>
+      <p class="w3-text-grey">Chicken, Beef, Tomatoes, Creamy Garlic Sauce, Potatoes,onions, Pita</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About us</h1>
+    <p>Dundun Pizza is a locally owned fast food outlet. Dundun Pizza is a privately held Limited Liability company. Dundun Pizza sells fresh pizza, Shawarma, Chicken and fries. We use the concept of french fries, where the fries are all made from fresh potatoes. Our outlet also provides excellent and friendly customer service to support the ambience of fun,energetic and youthful lifestyle.</p>
+    <p><img src="/img/beefandchicken.jpg" style="width:150px" class="w3-circle w3-right" alt="Pizza"></p>
+    <img src="/img/stuffy.jpeg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Monday & Tue 9am - 10pm</p>
+        <p>Wednesday 9am - 10pm</p>
+        <p>Thursday 9am - 10pm</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 9am - 10pm</p>
+        <p>Saturday 9am - 10pm</p>
+        <p>Sunday 11.00am - 10pm</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Contact -->
+
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p><i class="fa fa-map-marker" style="font-size:48px;color:red"></i>
+Find us at Ikeja City Mall </p>
+<p> <i class="fa fa-phone" style="font-size:48px;color:red"></i> call us at +2348109616049</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    
+
+      <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+ <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required email="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Copyright &copy <a href="http://www.myafrihub.com.ng" title="BlueTech" target="_blank" class="w3-hover-text-green">BlueTech</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
+
